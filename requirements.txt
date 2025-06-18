@@ -1,0 +1,32 @@
+# ==================================================
+# Final requirements.txt
+# ==================================================
+# A clean, focused list of dependencies for the CrewAI application.
+
+# --- Core Application Framework ---
+crewai
+crewai-tools
+
+# --- LangChain, Embeddings, and Local Models ---
+# This single package brings in the necessary langchain-core, transformers, etc.
+langchain-huggingface
+
+# This is the engine for running local embedding models.
+# It will pull in PyTorch as a dependency, which we install separately.
+sentence-transformers
+
+# --- Vector Database Client ---
+pymilvus
+
+# --- Web Search Tool Dependency ---
+google-search-results
+
+# --- Jupyter Notebook Environment ---
+# These provide the frontend and server for running notebooks.
+notebook
+jupyterlab
+
+# --- SQLite Hotfix (Good practice to keep) ---
+# For any library that might still transitively depend on it.
+chromadb
+pysqlite3-binary
