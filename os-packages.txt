@@ -1,0 +1,10 @@
+# ==================================================
+# Final os-packages.txt
+# ==================================================
+# Essential OS packages for building Python wheels
+
+git
+patch
+gcc
+gcc-c++
+make
